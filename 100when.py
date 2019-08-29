@@ -1,4 +1,4 @@
-# Project 1 - Ahmed Ali
+# Exercise 1 - Ahmed Ali
 # This project asks for your name and age, then tells you in what year you'll turn 100. It then asks how many times you want to repeat the previous statement, and repeats it by the given amount.
 
 
