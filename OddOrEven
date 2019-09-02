@@ -1,0 +1,25 @@
+# Ahmed Ali
+# 9/2/2019
+# This exercise first asks the user for an input, then tells the user if its even, odd, or divisible by 4. It then asks for the user for two numbers, and tells if the latter number is a factor of the former.
+
+# This functions tells the user if a number they chose is even, odd, or divisible by four
+def even_odd_fours ():
+  number = int(input("Pick a number ")) #Asks user for number
+  decider = number%2 #Carries the modulus 2 for the number, identifying if its odd or even
+  if decider==0 and int(decider)%2==0: . 
+    print("That number is divisible by 4!") # If modulus 2 is 0 and the modulus 2 of the resulting number also has a modulus 2 of 0, the number is divisible by 4
+  elif decider == 0: #if modulus 2 is 0, number is even
+    print("That's an even number!")
+  else:
+    print("That's an odd number!") #If it's 1, number is odd.
+
+
+
+# This functions asks the user for two numbers, and tells the user if the latter is a factor of the former
+def factors ():
+  num = int(input("Pick a number")) 
+  check = int(input("Pick another number"))
+  if num%check==0: #if the num mod check is 0, that means check divides num evenly, meaning check is a factor of num
+    print(check," is a factor of ",num)
+  else:
+    print(check," is not a factor of ",num)
