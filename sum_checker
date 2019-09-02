@@ -1,0 +1,14 @@
+# Ahmed Ali
+# 09/02/2019
+# A little exercise based on one of my first interview questions ever: "Given a list of numbers 0-59, return a list of pairs whose sum is more than 100, excluding doubles"
+# I realize the efficiency is O(n^2), so I may come back to this with a more efficient solution.
+
+def sum_check(target_sum, numbers_list): #target_sum is what we compare the sums of the pairs of numbers, while numbers_list is the original list of numbers
+  sums = [] #solution list
+  for i in numbers_list:
+    rest_of_list = numbers_list[:i-1]+numbers_list[i:] #create list without the subjected number
+    for j in rest_of_list: #for each number in the rest of the list
+      sum = i+j #add with original number
+      if sum>target_sum:#if the sum is more than the target
+        sums.append([i,j]) #add to the solutions list
+  return sums #return solution
