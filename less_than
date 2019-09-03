@@ -1,0 +1,8 @@
+# Ahmed Ali
+# 09/03/2019
+# In this exercise, we create a function that takes a list of integers and returns a new list of integers that are less than a number given by the user
+
+def less_than(num_list):
+  target = int(input("Give me a number"))
+  less_than = [i for i in num_list if i<target]
+  return less_than
